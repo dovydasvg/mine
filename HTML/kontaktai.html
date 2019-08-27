@@ -4,7 +4,7 @@
 
 <!-- Basic Page Needs
 ================================================== -->
-<title>Hireo</title>
+<title>klases.lt - kontaktai.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -13,11 +13,65 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/colors/blue.css">
 
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '1619048', 'v9c7a4a2b7', 'load');
+</script>
+<!-- End MailerLite Universal -->
+
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '2240413659584145',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>	
+
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
 
 <!-- Wrapper -->
 <div id="wrapper">
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="111504136861103"
+  theme_color="#3d66c2"
+  logged_in_greeting="Sveiki! Kaip galėtumėme jums padėti?"
+  logged_out_greeting="Sveiki! Kaip galėtumėme jums padėti?">
+</div>
+<script type="text/javascript">FB.CustomerChat.show(shouldShowDialog: boolean);
+</script>
 
 <!-- Header Container
 ================================================== -->
@@ -128,7 +182,7 @@
 					</button>
 				</span>
 				<div class="intro-search-button">	
-				<button class="button ripple-effect" style="width: 250px; background: #ffc82c; margin-top: 5px;" id="prisijungti-migtukas"> Prisijungti </button>
+				<a href="prisijungti.html"><button class="button ripple-effect" style="width: 250px; background: #ffc82c; margin-top: 5px;" id="prisijungti-migtukas"> Prisijungti </button></a>
 				</div>
 
 			</div>
@@ -173,7 +227,7 @@
 					<ul>
 						<li class="contact-address-headline">Pagrindinė klasė</li>
 						<li>Vytenio g. 6-211, Vilnius</li>
-						<li>Tel. +370 656 45 000</li>
+						<li>Tel. +370 605 72 096</li>
 						<li><a href="mail:dovydas@klases.lt">dovydas@klases.lt</a></li>
 						<li>
 							
@@ -188,43 +242,7 @@
 			</div>
 		</div>
 
-		<div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
-
-			<section id="contact" class="margin-bottom-60">
-				<h3 class="headline margin-top-15 margin-bottom-35">Turite klausimų? Susisiekite ir mes mielai jums atsakysime!</h3>
-
-				<form method="post" name="contactform" id="contactform" autocomplete="on">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="input-with-icon-left">
-								<input class="with-border" name="name" type="text" id="name" placeholder="Jūsų vardas" required="required" />
-								<i class="icon-material-outline-account-circle"></i>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="input-with-icon-left">
-								<input class="with-border" name="email" type="email" id="email" placeholder="El-paštas" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
-								<i class="icon-material-outline-email"></i>
-							</div>
-						</div>
-					</div>
-
-					<div class="input-with-icon-left">
-						<input class="with-border" name="subject" type="text" id="subject" placeholder="Tema" required="required" />
-						<i class="icon-material-outline-assignment"></i>
-					</div>
-
-					<div>
-						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Žinutė" spellcheck="true" required="required"></textarea>
-					</div>
-
-					<input type="submit" class="submit button margin-top-15" id="submit" value="Išsiųsti žinutę" />
-
-				</form>
-			</section>
-
-		</div>
+		
 
 	</div>
 </div>
@@ -260,7 +278,7 @@
 								<div class="footer-row-inner">
 									<ul class="footer-social-links">
 										<li>
-											<a href="#" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
+											<a href="https://www.facebook.com/klases.lt/" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
 												<i class="icon-brand-facebook-f"></i>
 											</a>
 										</li>
@@ -351,10 +369,11 @@
 				<div class="col-xl-4 col-lg-4 col-md-12">
 					<h3><i class="icon-feather-mail"></i> Gaukite visas naujienas pirmi.</h3>
 					<p>Patarimai kaip mokytis, video, intervių su dėstytojais ir dar daugiau.</p>
-					<form action="#" method="get" class="newsletter">
-						<input type="text" name="fname" placeholder="Jūsų el-paštas.">
-						<button type="submit"><i class="icon-feather-arrow-right"></i></button>
-					</form>
+					<div class="ml-form-embed"
+  data-account="1619048:v9c7a4a2b7"
+  data-form="1436212:n7u5b3">
+</div>
+		
 				</div>
 			</div>
 		</div>
